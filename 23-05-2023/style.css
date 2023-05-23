@@ -1,0 +1,111 @@
+body {
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Monserrat", sans-serif;
+  background-color: bisque;
+  padding: 5%;
+}
+
+.container-form,
+.container-form-add {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: solid rgb(118, 118, 118) 1px;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 2px black;
+  margin: 20% 2%;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.username,
+.id,
+.prod-title-add {
+  height: 30px;
+  border: solid rgb(141, 141, 141) 1px;
+  border-radius: 10px;
+  margin: 0 2%;
+  outline: none;
+}
+
+.submit {
+  width: 300px;
+  height: 50px;
+  border: none;
+  background-color: bisque;
+  padding: 2%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  box-shadow: 2px 2px 5px rgb(87, 87, 87);
+  transition: all 0.35s;
+}
+
+.welcome {
+  position: absolute;
+  top: 0;
+  font-size: 3em;
+}
+
+.cart {
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid #7d7d7d81 1px;
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 1.1rem;
+  background-color: white;
+  box-shadow: 2px 2px 2px black;
+  margin-top: 10%;
+}
+
+.container-form-add {
+  position: fixed;
+  bottom: 10px;
+  margin: 0;
+}
+
+.add {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
+  .cart {
+    margin-top: 2%;
+  }
+
+  .container-form-add {
+    position: fixed;
+    bottom: 0;
+    font-size: 8px;
+    padding: 2%;
+    margin: 2%;
+  }
+}
