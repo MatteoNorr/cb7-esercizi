@@ -1,0 +1,79 @@
+@media screen and (max-width: 1024px) {
+  .main-content {
+    width: 70%;
+  }
+
+  .post-img {
+    max-width: 100%;
+  }
+
+  .header {
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+  }
+
+  .main-logo {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+  }
+
+  .main-logo svg {
+    width: 50px;
+  }
+
+  .nav-item {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-link-label {
+    display: none;
+  }
+
+  .tweet {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .name,
+  .username {
+    text-align: center;
+  }
+
+  .more {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main-container {
+    padding: 0 7% 0 7%;
+  }
+
+  .header {
+    width: 30%;
+    height: 100vh;
+  }
+
+  .sidebar {
+    width: 40%;
+  }
+}
