@@ -1,0 +1,342 @@
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./font.css);
+/* @import url(./animations.css); */
+
+body {
+  width: 100vw;
+  height: 100%;
+  background: var(--background-body);
+  overflow-x: hidden;
+}
+
+.body-light {
+  background: #ececec;
+}
+
+.header {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: standingTitle;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+  background-color: var(--background-el);
+  margin: 0;
+}
+
+.header h1 {
+  color: var(--title-color);
+  font-size: 3.5rem;
+}
+
+.header-light {
+  background: var(--background-light);
+}
+
+.header-light h1 {
+  color: #ffd08a;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.content-section {
+  width: 50%;
+  height: 100%;
+  padding: 0 5%;
+  border: none;
+}
+
+.content-section__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+  font-family: username;
+  color: var(--title-color);
+  border-bottom: solid var(--title-color) 3px;
+}
+
+.content-section__title h2 {
+  width: 80%;
+  font-size: 3rem;
+}
+
+.content-title-light {
+  color: var(--background-light);
+  border-bottom: solid var(--background-light) 3px;
+}
+
+.light-mode {
+  width: 50px;
+  height: 50px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.light-mode-toggle {
+  content: url(../assets/images/night-mode.png);
+  background-color: var(--background-light);
+}
+
+.data-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+  color: var(--title-color);
+  font-size: 2rem;
+  font-family: username;
+}
+
+.data-title-light {
+  color: var(--background-light);
+}
+
+.users {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  animation: renderPlayersContainer 0.8s;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  color: var(--text-color);
+  font-family: username;
+}
+
+.user-info:nth-child(8) {
+  animation: renderPlayersBronze 1s 0.8s;
+  background-color: #a36621;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.user-info:nth-child(9) {
+  animation: renderPlayersSilver 1s 1.3s;
+  background-color: #cec9b9;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.user-info:nth-child(10) {
+  animation: renderPlayersGold 1.8s 1.8s;
+  background-color: #e7bf3c;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.user-info:nth-child(10):hover {
+  background-color: #e7bf3c;
+}
+.user-info:nth-child(9):hover {
+  background-color: #cec9b9;
+}
+.user-info:nth-child(8):hover {
+  background-color: #a36621;
+}
+
+.user-info:hover {
+  padding: 10px;
+  align-items: center;
+  transform: scale(105%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+  border-radius: 5px;
+  background-color: var(--background-el);
+  cursor: pointer;
+}
+
+.user-info p {
+  width: 200px;
+}
+
+.user-info-light {
+  color: #404040;
+}
+
+.user-info-light:hover {
+  background-color: var(--background-light);
+  color: var(--title-color-light);
+}
+
+.username {
+  width: 200px;
+  font-size: 20px;
+}
+
+.name {
+  font-size: 10px;
+}
+
+.user-mail {
+  width: 200px;
+  font-size: 15px;
+}
+
+.user-points {
+  width: 200px;
+  text-align: right;
+}
+
+.user-points span:first {
+  color: rgb(162, 157, 18);
+}
+
+.sidebar {
+  width: 50%;
+  height: 100vh;
+}
+
+.other-players {
+  padding: 0 5%;
+  color: var(--title-color);
+}
+
+.other-players h2 {
+  text-align: center;
+  font-family: username;
+  font-size: 3rem;
+}
+
+.global-rank-title-light {
+  color: var(--background-light);
+}
+
+@media (max-width: 1300px) {
+  .content-section {
+    width: 100vw;
+  }
+
+  .data-title {
+    width: 100%;
+  }
+
+  .users {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 390px;
+  }
+
+  .header {
+    min-width: 390px;
+    height: 100px;
+  }
+
+  .header h1 {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .container {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .content-section {
+    min-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-section__content {
+    min-width: 390px;
+  }
+
+  .content-section__title {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5%;
+    border: none;
+    font-family: username;
+  }
+
+  .content-section__title h2 {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .light-mode {
+    width: 30px;
+    height: 30px;
+  }
+
+  .data-title {
+    width: 100%;
+    font-size: 13px;
+    padding: 1% 5%;
+  }
+
+  .data-title p {
+    width: 150px;
+    text-align: center;
+  }
+
+  .data-title p:first-child {
+    padding-left: 3%;
+    text-align: left;
+  }
+
+  .data-title p:last-child {
+    text-align: right;
+  }
+
+  .users {
+    margin: 0;
+    padding: 0 5%;
+  }
+
+  .users p {
+    width: 150px;
+  }
+
+  .username {
+    font-size: 10px;
+  }
+
+  .name {
+    font-size: 6px;
+  }
+
+  .user-mail {
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .user-points {
+    text-align: right;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

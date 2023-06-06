@@ -1,0 +1,69 @@
+@keyframes renderPlayersContainer {
+  from {
+    transform: translateY(500px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes renderPlayersBronze {
+  from {
+    transform: scale(100%);
+    background-color: #a36621;
+    color: rgb(255, 255, 255);
+  }
+
+  50% {
+    transform: scale(105%);
+    padding: 2%;
+    background-color: #a36621;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  to {
+    transform: scale(100%);
+  }
+}
+
+@keyframes renderPlayersSilver {
+  from {
+    transform: scale(100%);
+    background-color: #cec9b9;
+    color: rgb(0, 0, 0);
+  }
+
+  50% {
+    transform: scale(105%);
+    padding: 2%;
+    background-color: #cec9b9;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+  }
+
+  to {
+    transform: scale(100%);
+  }
+}
+
+@keyframes renderPlayersGold {
+  from {
+    transform: scale(100%);
+    background-color: #e7bf3c;
+    color: rgb(0, 0, 0);
+  }
+
+  50% {
+    transform: scale(105%);
+    padding: 2%;
+    background-color: #e7bf3c;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+  }
+
+  to {
+    transform: scale(100%);
+  }
+}
