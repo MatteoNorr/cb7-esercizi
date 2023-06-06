@@ -1,0 +1,37 @@
+.sidebar {
+  width: 30%;
+  padding: 2%;
+}
+
+.follow-container {
+  min-width: 300px;
+  max-width: 320px;
+  padding: 8%;
+  background-color: #37353ab9;
+  border-radius: 20px;
+}
+
+.follow-title {
+  color: var(--color-text);
+}
+
+.container-follower {
+  display: flex;
+  gap: 20px;
+  padding: 1% 0;
+  margin: 5% 0;
+}
+
+.follow-image {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-text);
+  border-radius: 50%;
+}
+
+.container-follow-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-text);
+}

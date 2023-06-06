@@ -1,0 +1,149 @@
+.header {
+  width: 10%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3%;
+  margin-top: 10%;
+}
+
+.main-logo {
+  color: white;
+  width: 70px;
+  height: 70px;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+}
+
+.main-logo:hover {
+  border-radius: 50%;
+  background-color: #2b3640;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.nav-item {
+  width: 180px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  font-size: 20px;
+  margin-bottom: 5%;
+  padding: 8%;
+}
+
+.nav-item:hover {
+  border-radius: 30px;
+  background-color: #2b3640;
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration-line: none;
+}
+
+.nav-link-label {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  color: var(--color-text);
+  text-decoration-line: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-link-content {
+  display: flex;
+}
+
+.nav-link-icon {
+  width: 25px;
+  height: 25px;
+  fill: var(--color-icon);
+}
+
+.active svg {
+  fill: var(--tw-color);
+}
+
+.active {
+  color: var(--tw-color);
+}
+
+.tweet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 52px;
+  width: 150px;
+  border-radius: 50px;
+  background-color: #1d9bf0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tweet-link {
+  text-decoration-line: none;
+}
+
+.tweet-text {
+  color: white;
+}
+
+.account {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  margin: 30% 0 0 0;
+  gap: 10px;
+}
+
+.my-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.name {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-icon);
+  justify-content: flex-start;
+}
+
+.username {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--color-icon);
+}
+
+.account svg {
+  width: 40px;
+  fill: var(--color-icon);
+}
+
+.more {
+  width: 90px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.account:hover {
+  background-color: #2b3640;
+  border-radius: 50px;
+  cursor: pointer;
+}
